@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stamp Duty Calculator 2016</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="app">
+        <section class="intro">
+            <h1 class="intro__title">Stamp Duty Tax Calculator 2016</h1>
+            <p class="intro__text">How much stamp duty will you have to pay when buying a property in 2016?</p>
+            <p class="intro__text">Find out who and when to pay as well as how much you'll need to set aside to complete a property transaction.</p>
+        </section>
+
+        <section class="input">
+
+            <p class="input__error m-bottom m-top" id="error">Please enter numerical value</p>
+
+            <p class="input__intro m-bottom m-top">Please enter the price of the property you wish to calculate</p>
+
+            <div class="input__currency input__currency--no-br">&pound;</div>
+
+            <input type="text" class="input__text m-bottom" id="value" placeholder="eg. 545,000">
+
+            <label class="m-bottom">
+                <input class="input__secondHome" id="isSecondHome" type="checkbox" /> Property is a buy to let or second home?
+            </label>
+
+            <button type="button" class="input__button m-bottom" id="calculate">Calculate Stamp Duty</button>
+
+        </section>
+
+        <section class="results m-top" id="results-section">
+
+            <div class="results__stampToPay">
+                <h3 class="m-bottom">Stamp Duty To Pay</h3>
+                <div class="results__stampToPay__value" id="results"></div>
+            </div>
+
+            <div class="results__effectiveRate">
+                <h3 class="m-bottom">Effective Rate</h3>
+                <div class="results__effectiveRate__value" id="effective-rate"></div>
+            </div>
+
+            <div class="taxband">
+                <h3 class="taxband__title m-bottom border-bottom">How the Calculator Works</h3>
+                <table class="taxband__table" id="taxband-table">
+                    <tr>
+                        <th>Tax Band</th>
+                        <th>&#37;</th>
+                        <th>Taxable Sum</th>
+                        <th>TAX</th>
+                    </tr>
+                </table>
+            </div>
+<!--            <button type="button" value="Reset calculator" class="results__button" id="reset">Reset Calculator</button>-->
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
