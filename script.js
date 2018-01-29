@@ -28,7 +28,7 @@
 				min: 1500000,
 				max: null,
 				percent: 0.12
-		}
+			}
 		];
 
 		var secondTaxbands = [{
